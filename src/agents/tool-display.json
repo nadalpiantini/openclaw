@@ -140,10 +140,6 @@
         "screen_record": {
           "label": "screen record",
           "detailKeys": ["node", "nodeId", "duration", "durationMs", "fps", "screenIndex"]
-        },
-        "invoke": {
-          "label": "invoke",
-          "detailKeys": ["node", "nodeId", "invokeCommand"]
         }
       }
     },
@@ -271,9 +267,17 @@
         "model",
         "thinking",
         "runTimeoutSeconds",
-        "cleanup",
-        "timeoutSeconds"
+        "cleanup"
       ]
+    },
+    "subagents": {
+      "emoji": "🤖",
+      "title": "Subagents",
+      "actions": {
+        "list": { "label": "list", "detailKeys": ["recentMinutes"] },
+        "kill": { "label": "kill", "detailKeys": ["target"] },
+        "steer": { "label": "steer", "detailKeys": ["target"] }
+      }
     },
     "session_status": {
       "emoji": "📊",
